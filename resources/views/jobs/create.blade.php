@@ -14,12 +14,18 @@
           <label for="username" class="block text-sm/6 font-medium text-gray-900">Title</label>
           <div class="mt-2">
               <input id="title" type="text" name="title" placeholder="shift leader" class="block min-w-0 grow bg-white py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6 border-2 border-gray-400 rounded-4" />
+              @error('title')
+              <p class="text-red-500 font-semibold">{{$message}}</p>
+              @enderror
           </div>
         </div>
         <div class="sm:col-span-4">
           <label for="username" class="block text-sm/6 font-medium text-gray-900">Salary</label>
           <div class="mt-2">
               <input id="salary" type="text" name="salary" placeholder="$50 000" class="block min-w-0 grow bg-white py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6 border-2 border-gray-400 rounded-4" />
+              @error('salary')
+              <p class="text-red-500 font-semibold">{{$message}}</p>
+              @enderror
           </div>
         </div>
       </div>
