@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
 use App\Models\Job;
+use App\Http\Controllers\RegistereUserController;
+use App\Http\Controllers\SessionController;
+
 
 
 
@@ -25,4 +28,15 @@ Route::resource('jobs', JobController::class,[
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/register', [RegistereUserController::class, 'create']);
+Route::post('/register', [RegistereUserController::class, 'store']);
+
+Route::get('/login', [SessionController::class, 'create']);
+Route::post('/login', [SessionController::class, 'store']);
+
+
+
+
+
 
