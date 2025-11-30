@@ -13,7 +13,7 @@
 
         <x-form-field >
         <x-form-lable for="email">Email</x-form-lable>
-        <x-form-input id="email" type="email" name="email"  />
+        <x-form-input id="email" type="email" name="email" :value="old('email')"  />
           <x-form-error name="email"/>
         </x-form-field>
 

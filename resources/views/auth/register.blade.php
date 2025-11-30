@@ -35,9 +35,9 @@
         </x-form-field>
 
         <x-form-field >
-        <x-form-lable for="password_confrimation">Confrim Password</x-form-lable>
-        <x-form-input id="password_confrimation" type="password" name="password_confrimation"  />
-          <x-form-error name="password_confrimation"/>
+        <x-form-lable for="password_confirmation">Confrim Password</x-form-lable>
+        <x-form-input id="password_confirmation" type="password" name="password_confirmation"  />
+          <x-form-error name="password_confirmation"/>
         </x-form-field>
 
       </div>
